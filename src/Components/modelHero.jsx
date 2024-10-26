@@ -1,11 +1,24 @@
 import React from 'react'
-import HeroImage from "../assets/Model.png"
 
-function modelHero() {
+function modelHero(props) {
   return (
-    <div className='max-w-[580px]'>
-<img src={HeroImage} alt="" />
-    </div>
+    <>
+      <div className='relative'>
+
+        <div className='max-w-[580px] '>
+          <img src={props.src} alt="" />
+        </div>
+        <div className='border-pinkButton border-[7px] h-16 w-16 absolute left-8 top-40  rounded-full '>
+        </div>
+       
+          <div className='border-pinkButton border-[2px] h-8 w-8 absolute left-28 top-28  rounded-full '>
+
+          </div>
+    
+      </div>
+
+    </>
+
   )
 }
 
