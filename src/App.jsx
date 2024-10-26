@@ -1,25 +1,40 @@
-import { useState } from 'react'
-import logo from './assets/logo.png'
-import viteLogo from '/vite.svg'
-import './index.css'
-import NavBar from './Components/navbar'
-import HeroText from './Components/HeroText'
-import ModelHero from './Components/modelHero.jsx'
+import React from 'react'
+import { createBrowserRouter, RouterProvider } from 'react-router-dom'
+import Home from './screens/Home'
+import MentorFind from './screens/MentorFind'
+import MyMentors from './screens/MyMentors'
+import Resources from './screens/Resources'
+import Navbar from './Components/Navigation'
+
+const Routes = createBrowserRouter([{
+  path: "/",
+  element: <div>
+    <Home />
+  </div>
+},
+{
+  path: "/mentors",
+  element: <div>
+    <MentorFind />
+  </div>
+},
+{
+  path: "/mentor",
+  element: <div>
+    <MyMentors />
+  </div>
+},
+{
+  path: "/resources",
+  element: <div>
+    <Resources />
+  </div>
+},
+])
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
-    <>
-    <div id='Hero' className='bg-lightPink  rounded-bl-[8.5rem] font-roboto text-[20px] tracking-wide '>
-   <NavBar/>
-  
-  <section  id='heroSection' className='flex justify-between items-center px-20'>
-   <HeroText/>
-<ModelHero></ModelHero>
-  </section>
-    </div>
-    </>
+    <RouterProvider router={Routes}></RouterProvider>
   )
 }
 
