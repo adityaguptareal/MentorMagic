@@ -15,3 +15,5 @@ mentorRouter.post("/signup",function (req,res) {
     })
     res.status(200).json({msg:"You are on the main route"})
 })
+
+export deafult mentorRouter
