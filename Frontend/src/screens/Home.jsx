@@ -14,7 +14,7 @@ import CardIcon5 from "../assets/cardIcons/CardIcons (5).png"
 import CardIcon6 from "../assets/cardIcons/CardIcons (6).png"
 import FeatureModelImage from "../assets/FeatureModel.png"
 import learningResources from "../assets/learningResrouces.png"
-import MentorFeatureCard from "../Components/mentorFeatureCard.jsx";
+import MentorFeatureCard from "../Components/MentorFeatureCard.jsx";
 import SemiCircle from "../assets/SemiCircle.png"
 import MentorMatching from "../assets/mentorMatching.png"
 import PopularMentorCard from '../Components/PopularMentorCard.jsx'
