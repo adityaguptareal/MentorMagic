@@ -74,11 +74,11 @@ function Home() {
 
                 <div id="categoriesContainer" className='w-3/4 mx-auto grid md:grid-rows-3 md:grid-cols-2 xl:grid-rows-2 xl:grid-cols-3 sm:grid-rows-1 sm:grid-cols-1  gap-x-7 md:gap-y-10 gap-y-0 py-0 md:py-20'>
                     <Card content="Mentors who can guide you through programming languages" heading="Development" src={CardIcon1}></Card>
-                    <Card content="Mentors who can guide you through programming languages" heading="Development" src={CardIcon2}></Card>
-                    <Card content="Mentors who can guide you through programming languages" heading="Development" src={CardIcon3}></Card>
-                    <Card content="Mentors who can guide you through programming languages" heading="Development" src={CardIcon4}></Card>
-                    <Card content="Mentors who can guide you through programming languages" heading="Development" src={CardIcon5}></Card>
-                    <Card content="Mentors who can guide you through programming languages" heading="Development" src={CardIcon6}></Card>
+                    <Card content="Mentors who can help students understand financial concepts and accounting principles" heading="Finance" src={CardIcon2}></Card>
+                    <Card content="Mentors who can teach foreign languages or provide language learning tips." heading="Language Learning " src={CardIcon3}></Card>
+                    <Card content="who can guide you through user interface design principles, user experience research," heading="Ui/UX" src={CardIcon4}></Card>
+                    <Card content="Mentors who can guide aspiring entrepreneurs through the startup process" heading="Business" src={CardIcon5}></Card>
+                    <Card content="Mentors who can provide guidance on sales techniques, marketing, and business development." heading="Sales and Marketing" src={CardIcon6}></Card>
                 </div>
                 <p className='text-center font-montserrat text-[20px] pt-10 md:pt-0'>and Many More ...</p>
             </section>
