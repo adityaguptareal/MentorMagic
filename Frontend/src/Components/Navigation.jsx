@@ -2,9 +2,12 @@ import React, { useState } from 'react'
 import Logo from '../assets/Logo.png'
 import Button from './button'
 import OutlineButton from './outlineButton'
+import Signin from '../screens/Signin'
+import Signup from '../screens/Signup'
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars } from '@fortawesome/free-solid-svg-icons'
 import { Link } from 'react-router-dom';
+
 
 
 function Navbar() {
@@ -28,8 +31,8 @@ function Navbar() {
           </ul>
         </div>
         <div className='xl:flex hidden gap-6 items-center justify-center'>
-          <Button text="Sign up"></Button>
-          <OutlineButton text="Sign in"></OutlineButton>
+          <Link to='/signup'><Button text="Sign up"></Button></Link>
+          <Link to='/signin'><OutlineButton text="Sign in"></OutlineButton></Link>
         </div>
 
         <button className='xl:hidden cursor-pointer absolute top-10 md:right-20 right-10' onClick={() => {
