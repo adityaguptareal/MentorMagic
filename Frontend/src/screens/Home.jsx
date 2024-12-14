@@ -1,12 +1,10 @@
 import React from 'react'
 import Navbar from '../Components/Navigation.jsx'
-import HeroImage from "../assets/Model.png"
 import Button from '../Components/button.jsx'
 import OutlineButton from '../Components/outlineButton.jsx'
 import ModelImage from "../assets/Model.png"
 import ModelHappyCard from '../Components/ModelHappyCard.jsx'
 import Card from '../Components/Card.jsx'
-
 import CardIcon1 from "../assets/cardIcons/CardIcons (1).png"
 import CardIcon2 from "../assets/cardIcons/CardIcons (2).png"
 import CardIcon3 from "../assets/cardIcons/CardIcons (3).png"
