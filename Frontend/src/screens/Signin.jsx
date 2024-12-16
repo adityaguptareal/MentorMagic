@@ -1,16 +1,16 @@
 import React from 'react';
-import Navigation from "../Components/Navigation";
 
 function Signin() {
   return (
     <>
-      <div className="w-screen h-screen bg-lightPink overflow-hidden">
-        <Navigation />
+      <div className="w-screen h-screen  overflow-hidden">
+     
         <div className='flex'>
-          <div id="Content" className="w-3/5 h-screen overflow-hidden border-e-red-600 border-2 p-5">
-            Hi This is Content Box
+          <div id="Content" className="w-[70%] h-screen overflow-hidden bg-pink-600 text-white  p-5">
+            <div id='ctaHeading' className='text-4xl text-center my-24 font-bold font-montserrat'>Join, and Get Start your Career</div>
           </div>
           <div id='formBox'>
+            <div id='formHeading' className='text-center'>Fill the Form</div>
             <form action="" className='flex flex-col justify-center items-center border border-red-50 p-6'>
               
             <label htmlFor="name">Enter Your Name :</label>
