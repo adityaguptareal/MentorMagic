@@ -1,4 +1,5 @@
 import React from 'react'
+import {motion} from 'framer-motion'
 import Navbar from '../Components/Navigation.jsx'
 import Button from '../Components/button.jsx'
 import OutlineButton from '../Components/outlineButton.jsx'
@@ -38,10 +39,10 @@ function Home() {
 
                 <section id='heroSection' className='flex md:pt-0 pt-8 gap-6 md:gap-0 md:flex-row flex-col justify-between items-center md:px-20 px-10 pb-10 '>
                     <div className=''>
-                        <h1 className='xl:w-[500px] text-center md:text-left md:w-[350px] text-heroText font-montserrat font-bold text-4xl xl:text-5xl'>
-                            Find your perfect <h1 className='inline text-pinkButton'>mentor</h1> and level up your <h1 className='inline text-pinkButton'>career</h1>
-                        </h1>
-                        <div className='pt-7 text-[17px] text-center md:text-left'>MentorMagic: Connect, Learn, Grow</div>
+                        <motion.h1 initial={{ opacity: 0,y:30 }} animate={{ opacity: 1,y:0 }} transition={{ duration: 0.4 ,delay:0.5}} className='xl:w-[500px] text-center md:text-left md:w-[350px] text-heroText font-montserrat font-bold text-4xl xl:text-5xl'>
+                            Find your perfect <motion.h1 initial={{ opacity: 0,y:30 }} animate={{ opacity: 1,y:0 }} transition={{ duration: 0.4 ,delay:0.5}} className='inline text-pinkButton'>mentor</motion.h1> and level up your <motion.h1 initial={{ opacity: 0,y:30 }} animate={{ opacity: 1,y:0 }} transition={{ duration: 0.4 ,delay:0.5}} className='inline text-pinkButton'>career</motion.h1>
+                        </motion.h1>
+                        <motion.div initial={{opacity:0, y:30}} animate={{opacity:1,y:0}} transition={{duration:0.4,delay:0.5}} className='pt-7 text-[17px] text-center md:text-left'>MentorMagic: Connect, Learn, Grow</motion.div>
                         <div className='flex flex-col xl:flex-row gap-3 xl:gap-6 md:pt-4 pt-7'>
                             <Button text="Find a Mentor"></Button>
                             <OutlineButton text="Become a Mentor"></OutlineButton>
