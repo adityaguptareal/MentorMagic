@@ -1,6 +1,5 @@
 import React from 'react'
 import {motion} from 'framer-motion'
-import Navbar from '../Components/Navigation.jsx'
 import Button from '../Components/button.jsx'
 import OutlineButton from '../Components/outlineButton.jsx'
 import ModelImage from "../assets/Model.png"
@@ -32,7 +31,7 @@ function Home() {
         <>
             {/* Header */}
             <div id='Hero' className='bg-lightPink  rounded-bl-[8.5rem] font-roboto text-[20px] tracking-wide '>
-                <Navbar />
+            
 
 
                 {/* Hero Section */}
