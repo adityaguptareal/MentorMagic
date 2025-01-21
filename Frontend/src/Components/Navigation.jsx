@@ -7,6 +7,7 @@ import Signup from '../screens/Signup'
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars } from '@fortawesome/free-solid-svg-icons'
 import { Link } from 'react-router-dom';
+import { SignedIn, SignedOut, SignInButton, UserButton,ClerkProvider } from "@clerk/clerk-react";
 
 
 
@@ -28,11 +29,13 @@ function Navbar() {
               <Link to="/mentor">My Mentor</Link></li>
             <li className='hover:text-gray-600 hover:scale-[1.09] transition-all'>
               <Link to="/resources">Resources</Link></li>
+          <SignedOut>
+            <SignInButton />
+          </SignedOut>
+          <SignedIn>
+            <UserButton />
+          </SignedIn>
           </ul>
-        </div>
-        <div className='xl:flex hidden gap-6 items-center justify-center'>
-          <Link to='/signup'><Button text="Sign up"></Button></Link>
-          <Link to='/signin'><OutlineButton text="Sign in"></OutlineButton></Link>
         </div>
 
         <button className='xl:hidden cursor-pointer absolute top-10 md:right-20 right-10' onClick={() => {
