@@ -8,6 +8,7 @@ import Signin from './screens/Signin'
 import Signup from './screens/Signup'
 import Navbar from './Components/Navigation'
 import Layout from './Layout'
+import WelcomePage from './screens/Welcome'
 
 function App() {
   return (
@@ -18,8 +19,9 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/mentor" element={<MyMentors />} />
         <Route path="/resources" element={<Resources />} />
-        <Route path="/signin" element={<Signin />} />
-        <Route path="/signup" element={<Signup />} />
+        <Route path="/sign-in" element={<Signin />} />
+        <Route path="/sign-up" element={<Signup />} />
+        <Route path="/welcome" element={<WelcomePage />} />
       </Routes>
     </Layout>
       </BrowserRouter>
