@@ -20,7 +20,7 @@ function Navbar() {
 
         {/* Menu With Buttons */}
         <div className='flex gap-8 items-center text-[18px]'>
-          <ul className='xl:flex gap-7 items-center hidden '>
+          {/* <ul className='xl:flex gap-7 items-center hidden '>
             <li className='hover:text-gray-600 hover:scale-[1.09] transition-all'>
               <Link to="/">Home</Link></li>
             <li className='hover:text-gray-600 hover:scale-[1.09] transition-all'>
@@ -38,8 +38,8 @@ function Navbar() {
             <SignedIn>
               <UserButton />
             </SignedIn>
-            {/* <SignInButton forceRedirectUrl={"/welcome"}/> */}
-          </ul>
+            <SignInButton forceRedirectUrl={"/welcome"}/>
+          </ul> */}
         </div>
 
         <button className='xl:hidden cursor-pointer absolute top-10 md:right-20 right-10' onClick={() => {
