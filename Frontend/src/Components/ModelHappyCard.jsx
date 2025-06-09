@@ -8,7 +8,7 @@ import plus from "../assets/ReviewImages/Plus.svg"
 function ModelHappyCard() {
   return (
     <div className='bg-white w-[250px] h-[100px] shadow-lg flex flex-col justify-center rounded-[14px] items-center px-3 py-7 gap-3 absolute z-30 xl:right-0 xl:top-72 right-[-195px] xl:scale-100 md:scale-75 scale-[0.7] top-36'>
-<div className='text-center font-montserrat font-medium text-sm'>Our Happy Mentee</div>
+<div className='text-center font-montserrat font-medium text-[17px]'>Our Happy Mentee</div>
 <div className='flex justify-between items-center text-xs '>
   <div id="ratingBar" className='flex justify-items-center items-center gap-3'>
   <div id='starRating' className='flex gap-1 text-xs'>⭐⭐⭐ 100+</div>

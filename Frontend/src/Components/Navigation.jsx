@@ -15,7 +15,7 @@ function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
   return (
     <>
-      <header className='w-full py-8 md:px-20 px-8 flex items-center justify-between'>
+      <header className='w-full py-8 md:px-20 px-8 flex bg-lightPink items-center justify-between'>
         <img src={Logo} className='w-[250px] cursor-pointer' alt="" />
 
         {/* Menu With Buttons */}
@@ -38,6 +38,7 @@ function Navbar() {
             <SignedIn>
               <UserButton />
             </SignedIn>
+            {/* <SignInButton forceRedirectUrl={"/welcome"}/> */}
           </ul>
         </div>
 

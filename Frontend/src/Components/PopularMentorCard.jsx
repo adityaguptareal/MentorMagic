@@ -11,7 +11,7 @@ const PopularMentorCard = ({ name, position, src, description, bgColor }) => (
     <div id='image' className='relative left-[-40%]'>
       <img src={src} alt="" />
     </div>
-    <div id="description" className='w-[319px] h-[85px] rounded-xl bg-white font-montserrat text-left p-4 text-sm absolute left-[-50px] bottom-[-20px] shadow-xl'>
+    <div id="description" className=' rounded-xl bg-white font-montserrat text-left p-4 text-[16px] absolute left-[-50px] bottom-[-20px] shadow-xl'>
       {description}
     </div>
   </div>
